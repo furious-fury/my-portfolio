@@ -23,6 +23,19 @@ html{
 a{
     text-decoration: none;
 }
+textarea,
+input{
+    outline: none;
+    border: .1rem solid var(--clr-dark-grey);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-dark-grey);
+}
+input::placeholder{
+    color: inherit;
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+}
 section{
     height: 100vh;
 }
@@ -304,9 +317,6 @@ ul{
     border-bottom-left-radius: inherit;
     border-top-left-radius: inherit;
 }
-.form-container{
-    width: 70rem;
-}
 .info-title h3{
     font-family: var(--font-head);
     font-weight: 700;
@@ -338,4 +348,20 @@ ul{
     border-radius: 50%;
     border: .1rem solid var(--clr-white);
     box-shadow: 0 0.1rem 0.1rem var(--clr-white);
+}
+.form-container{
+    width: 70rem;
+    height: 31.5rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label{
+    font-family: var(--font-head);
+    font-size: 1.3rem;
 }
